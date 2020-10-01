@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		9372B8EF24B7520600FBF219 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9372B8EE24B7520600FBF219 /* AppDelegate.swift */; };
 		9372B8F124B7520600FBF219 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9372B8F024B7520600FBF219 /* SceneDelegate.swift */; };
-		9372B8F324B7520600FBF219 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9372B8F224B7520600FBF219 /* ViewController.swift */; };
+		9372B8F324B7520600FBF219 /* RoverProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9372B8F224B7520600FBF219 /* RoverProgramViewController.swift */; };
 		9372B8F624B7520600FBF219 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9372B8F424B7520600FBF219 /* Main.storyboard */; };
 		9372B8F824B7520900FBF219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9372B8F724B7520900FBF219 /* Assets.xcassets */; };
 		9372B8FB24B7520900FBF219 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9372B8F924B7520900FBF219 /* LaunchScreen.storyboard */; };
+		9372B90424B7526800FBF219 /* PointingProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9372B90324B7526800FBF219 /* PointingProgram.swift */; };
+		9372B90624B7526F00FBF219 /* Rover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9372B90524B7526F00FBF219 /* Rover.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9372B8EB24B7520600FBF219 /* Rover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9372B8EE24B7520600FBF219 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9372B8F024B7520600FBF219 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9372B8F224B7520600FBF219 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9372B8F224B7520600FBF219 /* RoverProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverProgramViewController.swift; sourceTree = "<group>"; };
 		9372B8F524B7520600FBF219 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9372B8F724B7520900FBF219 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9372B8FA24B7520900FBF219 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9372B8FC24B7520900FBF219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9372B90324B7526800FBF219 /* PointingProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointingProgram.swift; sourceTree = "<group>"; };
+		9372B90524B7526F00FBF219 /* Rover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rover.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		9372B8ED24B7520600FBF219 /* Rover */ = {
 			isa = PBXGroup;
 			children = (
-				9372B8EE24B7520600FBF219 /* AppDelegate.swift */,
-				9372B8F024B7520600FBF219 /* SceneDelegate.swift */,
-				9372B8F224B7520600FBF219 /* ViewController.swift */,
+				9372B90224B7521400FBF219 /* AuxillaryFIles */,
+				9372B8F224B7520600FBF219 /* RoverProgramViewController.swift */,
+				9372B90324B7526800FBF219 /* PointingProgram.swift */,
+				9372B90524B7526F00FBF219 /* Rover.swift */,
 				9372B8F424B7520600FBF219 /* Main.storyboard */,
 				9372B8F724B7520900FBF219 /* Assets.xcassets */,
 				9372B8F924B7520900FBF219 /* LaunchScreen.storyboard */,
 				9372B8FC24B7520900FBF219 /* Info.plist */,
 			);
 			path = Rover;
+			sourceTree = "<group>";
+		};
+		9372B90224B7521400FBF219 /* AuxillaryFIles */ = {
+			isa = PBXGroup;
+			children = (
+				9372B8EE24B7520600FBF219 /* AppDelegate.swift */,
+				9372B8F024B7520600FBF219 /* SceneDelegate.swift */,
+			);
+			path = AuxillaryFIles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9372B8F324B7520600FBF219 /* ViewController.swift in Sources */,
+				9372B90624B7526F00FBF219 /* Rover.swift in Sources */,
+				9372B90424B7526800FBF219 /* PointingProgram.swift in Sources */,
+				9372B8F324B7520600FBF219 /* RoverProgramViewController.swift in Sources */,
 				9372B8EF24B7520600FBF219 /* AppDelegate.swift in Sources */,
 				9372B8F124B7520600FBF219 /* SceneDelegate.swift in Sources */,
 			);
